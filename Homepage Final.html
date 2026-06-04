@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Homepage - Octobarkah Maulana Agus (2410039)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #C8CCCE;
+            font-family: Roboto, serif;
+        }
+
+        .area-gambar {
+            background-color: #000000;
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .area-gambar img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .area-gambar-placeholder {
+            background-color: #000000;
+            width: 100%;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #00A19B;
+            font-size: 1.1em;
+            color: #565F64;
+            letter-spacing: 4px;
+        }
+
+        .area-headline {
+            background-color: #000000;
+            border-top: 2px solid #00A19B;
+            border-bottom: 2px solid #00A19B;
+            padding: 10px 0;
+            overflow: hidden;
+        }
+
+        .area-headline marquee {
+            color: #FFFFFF;
+            font-size: 0.95em;
+            letter-spacing: 1px;
+        }
+
+        .area-headline span {
+            color: #00A19B;
+            font-weight: bold;
+        }
+
+        .area-utama {
+            display: table;
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .area-menu {
+            display: table-cell;
+            width: 160px;
+            background-color: #000000;
+            border-right: 2px solid #00A19B;
+            vertical-align: top;
+            padding: 20px 0;
+        }
+
+        .area-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .area-menu ul li {
+            border-bottom: 1px solid #111111;
+        }
+
+        .area-menu ul li a {
+            display: block;
+            padding: 12px 16px;
+            color: #C8CCCE;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        .area-menu ul li a:hover {
+            background-color: #00A19B;
+            color: #000000;
+        }
+
+        .area-konten {
+            display: table-cell;
+            vertical-align: top;
+            padding: 32px 36px;
+            background-color: #0f0f0f;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section:target {
+            display: block;
+        }
+
+        #beranda {
+            display: block;
+        }
+
+        #profile:target~#beranda,
+        #hobbies:target~#beranda,
+        #education:target~#beranda,
+        #cita-cita:target~#beranda,
+        #contact:target~#beranda {
+            display: none;
+        }
+
+        .section h1 {
+            color: #00A19B;
+            border-left: 4px solid #00A19B;
+            padding-left: 12px;
+            font-size: 1.3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            line-height: 1.8;
+            margin-bottom: 10px;
+            color: #C8CCCE;
+        }
+
+        .tabel-biodata {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .tabel-biodata td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #1e1e1e;
+            vertical-align: top;
+        }
+
+        .tabel-biodata td:first-child {
+            color: #00A19B;
+            font-weight: bold;
+            width: 160px;
+            white-space: nowrap;
+        }
+
+        .tabel-biodata td:nth-child(2) {
+            width: 12px;
+            color: #565F64;
+        }
+
+        .list-hobi {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .list-hobi li {
+            padding: 10px 14px;
+            border-bottom: 1px solid #1e1e1e;
+            color: #C8CCCE;
+        }
+
+        .list-hobi li::before {
+            content: "▸ ";
+            color: #00A19B;
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #00A19B;
+            color: #000000;
+            font-size: 0.75em;
+            padding: 2px 8px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            background-color: #000000;
+            border-top: 2px solid #00A19B;
+            text-align: center;
+            padding: 14px;
+            color: #565F64;
+            font-size: 0.82em;
+            letter-spacing: 1px;
+        }
+
+        .footer span {
+            color: #00A19B;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="area-gambar">
+        <img src="W17 Desktop Wallpaper 1.jpg" alt="Mercedes-AMG Petronas W17">
+    </div>
+
+
+
+    <div class="area-headline">
+        <marquee>
+            Welcome to my homepage! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            I am an IT-enthusiast &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            and <span>Mercedes-AMG Petronas Formula One&trade; Team</span> fans
+        </marquee>
+    </div>
+
+
+    <div class="area-utama">
+
+        <div class="area-menu">
+            <ul>
+                <li><a href="#beranda">HOME</a></li>
+                <li><a href="#profile">PROFIL</a></li>
+                <li><a href="#hobbies">HOBI</a></li>
+                <li><a href="#education">PENDIDIKAN</a></li>
+                <li><a href="#cita-cita">CITA-CITA</a></li>
+                <li><a href="#contact">KONTAK</a></li>
+            </ul>
+        </div>
+
+        <div class="area-konten">
+
+            <div id="beranda" class="section">
+                <h1>&#127968; Beranda</h1>
+                <p>Selamat datang di halaman <b>homepage</b> saya.</p>
+                <p>Di sini Anda dapat menemukan berbagai informasi tentang saya, termasuk profil, hobi, dan kontak.</p>
+                <p>Silahkan jelajahi menu di sebelah kiri untuk mengetahui lebih lanjut tentang saya.</p>
+                <p>Happy browsing and have a great day! &#128522;</p>
+            </div>
+
+            <div id="profile" class="section">
+                <h1>&#128100; Profil</h1>
+                <table class="tabel-biodata">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><b>Octobarkah Maulana Agus</b></td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td>2410039</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>Sistem Informasi</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>:</td>
+                        <td><span class="badge">MAHASISWA AKTIF</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="hobbies" class="section">
+                <h1>&#127918; Hobi</h1>
+                <ul class="list-hobi">
+                    <li>Bermain Game</li>
+                    <li>Nonton Formula 1</li>
+                    <li>Ngoding</li>
+                    <li>Jogging</li>
+                    <li>Ngopi</li>
+                    <li>Ngomong pakai Bahasa Inggris</li>
+                </ul>
+            </div>
+
+            <div id="education" class="section">
+                <h1>🎓 Pendidikan</h1>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2011 — 2017</span>
+                        <div class="timeline-title">SD Baiturrahmah 1</div>
+                        <div class="timeline-sub"><i>Elementary School</i> &nbsp;<span class="badge">GRADUATED</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2017 — 2020</span>
+                        <div class="timeline-title">SMP Negeri 2 Padang</div>
+                        <div class="timeline-sub"><i>Junior High School</i> &nbsp;<span class="badge">GRADUATED</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2020 — 2023</span>
+                        <div class="timeline-title">SMA Negeri 2 Padang</div>
+                        <div class="timeline-sub"><i>Senior High School</i> &nbsp;<span class="badge">GRADUATED</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2024 — Now</span>
+                        <div class="timeline-title">STMIK-AMIK Jayanusa</div>
+                        <div class="timeline-sub"><i>Bachelor's Degree of Information Systems</i> &nbsp;<span
+                                class="badge">ONGOING</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="cita-cita" class="section">
+                <h1>&#127881; Cita-Cita</h1>
+                <ul class="list-hobi">
+                    <li>Menjadi seorang Software Engineer yang handal</li>
+                    <li>Menggarap project baik mandiri maupun dengan tim</li>
+                    <li>Berkontribusi pada open-source projects</li>
+                    <li>Menjadi Expert dalam Data Analyst</li>
+                    <li>Menjadi IT Worker yang berkontribusi kepada masyarakat</li>
+                </ul>
+            </div>
+            <div id="contact" class="section">
+                <h1>&#128222; Kontak</h1>
+                <table class="tabel-biodata">
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td>octobarkah123@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>:</td>
+                        <td>085283457335</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>:</td>
+                        <td>@octfvl_</td>
+                    </tr>
+                    <tr>
+                        <td>MLBB</td>
+                        <td>:</td>
+                        <td>Eionz Russell.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        &copy; 2026 &nbsp;<span>Octobarkah Maulana Agus</span>&nbsp; &bull; &nbsp; Sistem Informasi - STMIK-AMIK
+        Jayanusa &bull; Mercedes-AMG Petronas Formula One Team Inspired
+    </div>
+
+</body>
+
+</html>
